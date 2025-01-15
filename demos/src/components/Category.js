@@ -28,6 +28,22 @@ let[category,setCategory]=useState([]);
         funDisplay();
     },[]);
 
+    
+    function funselect(event){
+        var txt=event.currentTarget.value;
+        console.log(txt);
+        funDisplay(txt);
+    }
+
+    let imgStyle={"width":"200px","height":"200px"}
+
+    let[RowData,setRowData]=useState();
+    function rowClick(obj){
+        setRowData(obj);
+        console.log(RowData);
+
+    }
+
 
     return(
         <>
