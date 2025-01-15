@@ -14,6 +14,21 @@ let[category,setCategory]=useState([]);
     useEffect(()=>{
         getCategory();
     },[]);
+
+
+    let[list,setlist]=useState([])
+    async function funDisplay(category_list){
+        let response=await fetch('https://dummyjson.com/products/category/'+category_list);
+        let result=await response.json();
+        setlist(result.products)
+
+    }
+
+    useEffect(()=>{
+        funDisplay();
+    },[]);
+
+
     return(
         <>
         <h3>Category</h3>
