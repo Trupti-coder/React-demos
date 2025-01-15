@@ -32,7 +32,18 @@ let[category,setCategory]=useState([]);
                     <th>Price</th>
                     <th>Img</th>
                 </Table>
-                
+                {
+                    list.map((x)=>{
+                        return<tr onClick={()=>{rowClick(x)}}>
+                            <td>{x.id}</td>
+                            <td>{x.title}</td>
+                            <td>{x.price}</td>
+                            <td><img src={x.thumbnail} style={imgStyle}></img></td>
+                        </tr>
+                             
+
+                    })
+                }
             </div>
         </>
     );
