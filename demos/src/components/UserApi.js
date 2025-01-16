@@ -15,6 +15,13 @@ function UserApi(){
     fetchUsers();
   }, []);
 
+   // Apply filters
+   const filteredUsers = users.filter(
+    (user) =>
+      (!genderFilter || user.gender === genderFilter) &&
+      (!bloodGroupFilter || user.bloodGroup === bloodGroupFilter)
+  );
+
 
     return(
         <>
