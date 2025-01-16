@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import { Table } from "react-bootstrap";
 function Category(){
 
 
@@ -57,6 +58,7 @@ let[category,setCategory]=useState([]);
                 }
             </select>
             <div>
+                
                 <Table className="table table-info table-hover table-bordered">
                     <th>Id</th>
                     <th>Title</th>
