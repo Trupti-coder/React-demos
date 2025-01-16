@@ -6,6 +6,14 @@ function ControledForm(){
     let[subject,setSubject]=useState([]);
     let[city,setCity]=useState("");
 
+    function funSubmit(event){
+        event.preventDefault();
+        console.log(name,dob,gender,subject,city);
+        let obj={userName:name,userDob:dob,userGender:gender,userSubject:subject,userCity:city}
+        console.log(obj);
+
+    }
+
     return(
         <>
         <form onSubmit={funSubmit}>
