@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 function ToDoList(){
+    let[task,setTask]=useState("");
+
+    let[tasks,setTasks]=useState([]);
+
+    function funTask(event){
+        setTask(event.target.value);
+          
+      }
+      
     return(
         <>
         <h3>ToDoList Application</h3>
