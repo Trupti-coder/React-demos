@@ -33,6 +33,19 @@ function ToDoList(){
     <input type="text"  value={task}  onChange={funTask}/>
 
     <button onClick={funAdd}>Add</button>
+
+    <ul>
+      {
+        tasks.map((task,index)=>{
+          return(
+          <li key={index}>
+            <span>{task}</span>
+            <button onClick={()=>{funRemove(index)}} style={{paddingLeft:"2px"}}>Remove</button>
+          </li>
+
+        )})
+      }
+    </ul>
         </>
     );
 }
