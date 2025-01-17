@@ -1,4 +1,21 @@
-function AddProduct(){
+import { useState } from "react";
+
+function AddProduct(props){
+    
+        let [txtName,setTxtName]=useState();
+        let [txtPrice,setTxtPrice]=useState();
+
+        function nameChange(event){
+            setTxtName(event.currentTarget.value);
+           // console.log(txtName);
+        }
+        function priceChange(event){
+            setTxtPrice(event.currentTarget.value);
+           // console.log(txtPrice);
+    
+        }
+
+
     return(
         <>
         <h3>Add product Form </h3>
@@ -11,7 +28,7 @@ function AddProduct(){
         <div>
             <input type="button" value="AddProduct" onClick={funAdd}/>
         </div>
-    </div>
+
         </>
     );
 }
