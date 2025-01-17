@@ -20,6 +20,13 @@ function ToDoList(){
     
       }
 
+
+      function funRemove(index){
+        const newTasks=[...tasks];
+        newTasks.splice(index,1);
+        setTasks(newTasks);
+      }
+
     return(
         <>
         <h3>ToDoList Application</h3>
