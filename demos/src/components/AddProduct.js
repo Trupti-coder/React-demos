@@ -15,6 +15,15 @@ function AddProduct(props){
     
         }
 
+        function funAdd(){
+            console.log(txtName,txtPrice);
+            var obj={prodName:txtName,prodPrice:txtPrice};
+            props.getNewObj(obj); //create a new object and send it to the app componenet via props.getNewObj
+            console.log(obj);
+    
+    
+        }
+
 
     return(
         <>
