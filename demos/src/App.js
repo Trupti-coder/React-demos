@@ -2,6 +2,7 @@
 import './App.css';
 import AddProduct from './components/AddProduct';
 import Category from './components/Category';
+import Counter from './components/Counter';
 import ToDoList from './components/ToDoList';
 import UserApi from './components/UserApi';
 
@@ -15,6 +16,8 @@ function App() {
    <AddProduct />
    <hr></hr>
    <ToDoList />
+   <hr></hr>
+   <Counter />
 
    </>
   );
