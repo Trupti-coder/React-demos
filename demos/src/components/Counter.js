@@ -1,4 +1,18 @@
+import { useState } from "react";
+
 function Counter(){
+    let[count,setCount]=useState();
+
+    function funIncrement(){
+        setCount(++count);
+
+    }
+
+    function funDecrement(){
+
+        setCount(--count);
+    }
+
     return(
         <>
          <h3>Count:{count}</h3>
