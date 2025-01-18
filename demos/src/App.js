@@ -18,6 +18,7 @@ function App() {
    <ToDoList />
    <hr></hr>
    <Counter />
+   <hr></hr>
 
    </>
   );
