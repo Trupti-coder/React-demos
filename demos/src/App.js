@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import ToDoList from './components/ToDoList';
 import UserApi from './components/UserApi';
 import Login from './components/Login';
+import ShowList from './components/ShowList';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
     </Routes>
 
     <hr></hr>
+    <ShowList />
 
    </>
   );
