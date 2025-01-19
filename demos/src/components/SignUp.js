@@ -35,9 +35,14 @@ function SignUp(){
             existingUser=[];
         }
 
+        if(!Array.isArray(existingUser)){
+            existingUser=[];
+        }
 
+        existingUser.push(newUser);
 
-
+        localStorage.setItem('users',JSON.stringify(newUs))
+        
 
     }
 
