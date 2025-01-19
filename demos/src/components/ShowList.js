@@ -52,7 +52,7 @@ function ShowList(){
 
     //for rowClick
     let[rowflag,setRowFlag]=useState(false);
-    let[rowdata,setRowData]=useState();
+    let[rowData,setRowData]=useState();
 
     function rowClick(obj){
         console.log(obj);
@@ -95,6 +95,9 @@ function ShowList(){
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
         </ul>
+        {
+            rowflag && 
+        }
         </>
     );
 }
