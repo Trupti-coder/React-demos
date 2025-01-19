@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 
 function ShowList(){
 
-    function funClick(){
+    function funClick(event){
+
+        event.preventDefault();
+        var x=parseInt(event.target.textContent);
         
     }
 
