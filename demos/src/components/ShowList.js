@@ -14,6 +14,8 @@ function ShowList(){
         getAllList();
     },[]);
 
+    let imgStyle={"width":"100px" ,"Height":"100px"}
+
     return(
         <>
         <table border='2'>
@@ -25,6 +27,19 @@ function ShowList(){
                 <th>prepTimeMinutes</th>
                 <th>Image</th>
             </tr>
+            {
+                list.map((x)=>{
+                    <tr key={x.id}>
+                        <td>{x.id}</td>
+                        <td>{x.name}</td>
+                        <td>{x.ingredients}</td>
+                        <td>{x.intructions}</td>
+                        <td>{x.prepTimeMinutes}</td>
+                        <td><img src={x.image} style={imgStyle}></img></td>
+
+                    </tr>
+                })
+            }
         </table>
         </>
     );
