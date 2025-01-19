@@ -15,16 +15,22 @@ function ShowList(){
             getAllList(lm,sk);
             
         }
-        
+        else if(x===2){
+            lm=10;
+            sk=10;
+            getAllList(lm,sk);
+        }
+        else if(x===3){
+            lm=10;
+            sk=20;
+            getAllList(lm,sk);
+        }
+        else{
+            lm=10;
+            sk=0;
+            getAllList(lm,sk);
+        }
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -39,7 +45,7 @@ function ShowList(){
     }
 
     useEffect(()=>{
-        getAllList();
+        getAllList(10,0);
     },[]);
 
     let imgStyle={"width":"100px" ,"Height":"100px"}
