@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MyModel from "./MyModel";
 
 function ShowList(){
 
@@ -96,7 +97,7 @@ function ShowList(){
             <li><a href="">3</a></li>
         </ul>
         {
-            rowflag && 
+            rowflag && <MyModel rowData={rowData} />
         }
         </>
     );
