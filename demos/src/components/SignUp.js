@@ -5,22 +5,29 @@ function SignUp(){
     let[email,setEmail]=useState("");
     let[password,setPassword]=useState("");
 
-    function nameChange(){
+    function nameChange(event){
+        setName(event.target.value);
 
     }
 
-    function emailChange(){
+    function emailChange(event){
+        setEmail(event.target.value);
 
     }
 
-    function passwordChange(){
+    function passwordChange(event){
+        setPassword(event.target.value);
+
+    }
+
+    function funSubmit(){
         
     }
 
    
     return(
         <>
-        <form>
+        <form onClick={funSubmit}>
             <div>
                 Name:<input type="text" onChange={nameChange} />
             </div>
@@ -29,6 +36,9 @@ function SignUp(){
             </div>
             <div>
                 Password:<input type="password" onChange={passwordChange} required />
+            </div>
+            <div>
+                <button type="submit">submit</button>
             </div>
         </form>
         </>
