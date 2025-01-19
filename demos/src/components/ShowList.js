@@ -50,8 +50,19 @@ function ShowList(){
 
     let imgStyle={"width":"100px" ,"Height":"100px"}
 
+    //for rowClick
+    let[rowflag,setRowFlag]=useState(false);
+    let[rowdata,setRowData]=useState();
+
+    function rowClick(obj){
+        console.log(obj);
+        setRowFlag(true);
+        setRowData(obj);
+    }
+
     return(
         <>
+
         <h3>Recipes List</h3>
         <table border='2'>
             <tr>
@@ -65,7 +76,7 @@ function ShowList(){
             {
                 list.map((x)=>{
 
-                   return(<tr key={x.id}>
+                   return(<tr key={x.id} onClick={()=>{rowClick(x)}}>
                         <td>{x.id}</td>
                         <td>{x.name}</td>
                         <td>{x.ingredients}</td>
