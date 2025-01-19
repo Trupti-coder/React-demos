@@ -1,4 +1,10 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 function Login(){
+    let[email,setEmail]=useState();
+    let[password,setPassword]=useState();
+
     return(
         <>
         <form>
@@ -13,6 +19,9 @@ function Login(){
                 <button type="submit">Login</button>
             </div>
         </form>
+        <div>
+            <p>If you do not have account<Link >signup here</Link> </p> 
+        </div>
         </>
     );
 }
