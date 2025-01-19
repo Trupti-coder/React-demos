@@ -29,6 +29,8 @@ function App() {
 
     </Routes>
 
+    <hr></hr>
+
    </>
   );
 }
