@@ -6,6 +6,15 @@ function ShowList(){
 
         event.preventDefault();
         var x=parseInt(event.target.textContent);
+        console.log(x);
+        let lm=0;
+        let sk=0;
+        if(x===1){
+            lm=10;
+            sk=0;
+            getAllList(lm,sk);
+            
+        }
         
     }
 
