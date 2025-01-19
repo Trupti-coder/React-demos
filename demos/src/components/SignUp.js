@@ -27,6 +27,15 @@ function SignUp(){
         let newUser={userName:name,userEmail:email,userPassword:password}
         console.log(newUser);
 
+        let existingUser;
+        if(localStorage.getItem("users")){
+            existingUser=JSON.parse(localStorage.getItem("users"));
+        }
+        else{
+            existingUser=[];
+        }
+
+
 
 
 
