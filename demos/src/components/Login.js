@@ -17,6 +17,9 @@ function Login(){
     function funSubmit(event){
         event.preventDefault();
 
+        let storedUseres=JSON.parse(localStorage.getItem("users"));
+        let isValiduser=false;
+
     }
 
     return(
