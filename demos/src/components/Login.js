@@ -6,6 +6,18 @@ function Login(){
     let[password,setPassword]=useState('');
     let[error,setError]=useState();
     
+    function emailChange(event){
+        setEmail(event.target.value);
+    }
+
+    function passwordChange(event){
+        setPassword(event.target.value);
+    }
+
+    function funSubmit(event){
+        event.preventDefault();
+
+    }
 
     return(
         <>
