@@ -29,6 +29,13 @@ function Login(){
             }
         }
 
+        if(isValiduser){
+            alert("login successful");
+        }
+        else{
+            setError("Invalid userEmail and userPassword");
+        }
+
     }
 
     return(
