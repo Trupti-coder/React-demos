@@ -55,7 +55,7 @@ function SignUp(){
    
     return(
         <>
-        <form onClick={funSubmit}>
+        <form onSubmit={funSubmit}>
             <div>
                 Name:<input type="text" onChange={nameChange} />
             </div>
