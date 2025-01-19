@@ -7,6 +7,7 @@ function SignUp(){
 
     function nameChange(event){
         setName(event.target.value);
+        console.log(name);
 
     }
 
@@ -20,8 +21,15 @@ function SignUp(){
 
     }
 
-    function funSubmit(){
-        
+    function funSubmit(event){
+        event.preventDefault();
+
+        let newUser={userName:name,userEmail:email,userPassword:password}
+        console.log(newUser);
+
+
+
+
     }
 
    
