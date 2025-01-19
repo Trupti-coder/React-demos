@@ -20,6 +20,15 @@ function Login(){
         let storedUseres=JSON.parse(localStorage.getItem("users"));
         let isValiduser=false;
 
+        if(storedUseres){
+            for(let i=0;i<storedUseres.length;i++){
+                if(storedUseres[i].userEmail===email && storedUseres[i].userPassword===password){
+                    isValiduser=true;
+                    break;
+                }
+            }
+        }
+
     }
 
     return(
