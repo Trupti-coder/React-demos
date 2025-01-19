@@ -16,7 +16,16 @@ function ShowList(){
 
     return(
         <>
-        
+        <table border='2'>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Instructions</th>
+                <th>prepTimeMinutes</th>
+                <th>Image</th>
+            </tr>
+        </table>
         </>
     );
 }
