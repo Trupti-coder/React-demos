@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 
 function ShowList(){
 
+    // for get all product info
+
     let[list,setList]=useState([]);
     async function getAllList(){
-        let response=await fetch('https://dummyjson.com/recipes');
+        let response=await fetch('https://dummyjson.com/recipes?limit='+lm+'&skip='+sk);
         let result=await response.json();
         console.log(result.recipes);
         setList(result.recipes);
