@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ShowList(){
 
@@ -10,8 +10,13 @@ function ShowList(){
         setList(result.recipes);
     }
 
+    useEffect(()=>{
+        getAllList();
+    },[]);
+
     return(
         <>
+        
         </>
     );
 }
