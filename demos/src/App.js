@@ -3,6 +3,7 @@ import './App.css';
 import AddProduct from './components/AddProduct';
 import Category from './components/Category';
 import Counter from './components/Counter';
+import SignUp from './components/SignUp';
 import ToDoList from './components/ToDoList';
 import UserApi from './components/UserApi';
 
@@ -19,6 +20,7 @@ function App() {
    <hr></hr>
    <Counter />
    <hr></hr>
+   <SignUp />
 
    </>
   );
