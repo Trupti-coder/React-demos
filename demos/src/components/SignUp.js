@@ -41,7 +41,13 @@ function SignUp(){
 
         existingUser.push(newUser);
 
-        localStorage.setItem('users',JSON.stringify(newUs))
+        localStorage.setItem('users',JSON.stringify(existingUser))
+        alert("data successfully saved to localstorage");
+
+
+        setName("");
+        setEmail("");
+        setPassword("");
         
 
     }
