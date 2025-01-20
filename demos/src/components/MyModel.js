@@ -11,6 +11,22 @@ function MyModel(props){
     let[txtInstruction,setInstruction]=useState();
     let[txtprepTimeMinutes,setprepTimeMinutes]=useState();
 
+    function idChange(){
+
+    }
+
+    function timeChange(){
+
+    }
+
+    function funUpdate(){
+
+    }
+
+    function funDelete(){
+        
+    }
+
     return(
         <>
         <Modal>
@@ -35,7 +51,7 @@ function MyModel(props){
                         Instructions:<input type='text' defaultValue={txtInstruction} ></input>
                     </div>
                     <div>
-                        prepTimeMinutes:<input type='text' defaultValue={txtprepTimeMinutes}></input>
+                        prepTimeMinutes:<input type='text' defaultValue={txtprepTimeMinutes} onClick={timeChange}></input>
                     </div>
                 </Modal.body>
                 <Modal.Footer>
