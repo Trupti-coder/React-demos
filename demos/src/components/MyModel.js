@@ -1,3 +1,4 @@
+import { Modal } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 function MyModel(props){
@@ -12,6 +13,19 @@ function MyModel(props){
 
     return(
         <>
+        <Modal>
+            <Modal.Dialog>
+                <Modal.Header closeButton>
+                    <Modal.Title>
+                        Display Recipes
+
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.body>
+                    
+                </Modal.body>
+            </Modal.Dialog>
+        </Modal>
         </>
     );
 }
