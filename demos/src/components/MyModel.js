@@ -44,7 +44,13 @@ function MyModel(props){
 
     }
 
-    function funDelete(){
+     async function funDelete(){
+        var response=await fetch('https://dummyjson.com/products/'+txtId,{
+            method: 'DELETE'
+        })
+        var result=await response.json();
+        console.log(result);
+        btnClose();
 
     }
 
