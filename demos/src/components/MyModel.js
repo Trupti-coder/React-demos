@@ -11,11 +11,21 @@ function MyModel(props){
     let[txtInstruction,setInstruction]=useState();
     let[txtprepTimeMinutes,setprepTimeMinutes]=useState();
 
-    function idChange(){
+    function btnClose(){
+        setModelOpen(false);
+    }
+
+    function idChange(event){
+        var x=event.currentTarget.value;
+        console.log(x);
+        setId(x);
 
     }
 
-    function timeChange(){
+    function timeChange(event){
+        var x=event.currentTarget.value;
+        console.log(x);
+        setprepTimeMinutes(x);
 
     }
 
@@ -24,7 +34,7 @@ function MyModel(props){
     }
 
     function funDelete(){
-        
+
     }
 
     return(
