@@ -1,4 +1,4 @@
-import { Modal } from 'bootstrap';
+import { Button, Modal } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 function MyModel(props){
@@ -38,6 +38,11 @@ function MyModel(props){
                         prepTimeMinutes:<input type='text' defaultValue={txtprepTimeMinutes}></input>
                     </div>
                 </Modal.body>
+                <Modal.Footer>
+                    <Button varient='secondary' onClick={funClose}>Close</Button>
+                    <Button varient="primary" onClick={funUpdate}>Update</Button>
+                    <Button varient="secondary" onClick={funDelete}>Delete</Button>
+                </Modal.Footer>
             </Modal.Dialog>
         </Modal>
         </>
