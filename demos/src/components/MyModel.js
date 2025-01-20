@@ -29,7 +29,18 @@ function MyModel(props){
 
     }
 
-    function funUpdate(){
+   async function funUpdate(){
+    let response=await fetch('https://dummyjson.com/recipes/'+txtId,{
+        method: 'PUT', /* or PATCH */
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            prepTimeMinutes:txtprepTimeMinutes
+          
+        })
+    })
+    var result=await response.json();
+    console.log(result);
+    btnClose();
 
     }
 
