@@ -22,7 +22,21 @@ function MyModel(props){
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.body>
-                    
+                    <div>
+                        Id:<input type='text' defaultValue={txtId} onChange={idChange} ></input>
+                    </div>
+                    <div>
+                        Name:<input type='text'defaultValue={txtName}></input>
+                    </div>
+                    <div>
+                        Ingredients:<input type='text' defaultValue={txtIngredients}></input>
+                    </div>
+                    <div>
+                        Instructions:<input type='text' defaultValue={txtInstruction} ></input>
+                    </div>
+                    <div>
+                        prepTimeMinutes:<input type='text' defaultValue={txtprepTimeMinutes}></input>
+                    </div>
                 </Modal.body>
             </Modal.Dialog>
         </Modal>
