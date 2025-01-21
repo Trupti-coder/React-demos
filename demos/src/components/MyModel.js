@@ -1,6 +1,6 @@
 import { Button, Modal } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 function MyModel(props){
 
     let[modelopen,setModelOpen]=useState(false);
@@ -53,6 +53,16 @@ function MyModel(props){
         btnClose();
 
     }
+
+    useEffect(()=>{
+        setModelOpen(true);
+        setId(props.rowData.id);
+        setName(props.rowData.name);
+        setIngredients(props.rowData.ingredients);
+        setInstruction(props.rowData.instructions);
+        setprepTimeMinutes(props.rowData.prepTimeMinutes);
+
+    })
 
     return(
         <>
