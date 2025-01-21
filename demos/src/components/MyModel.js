@@ -66,7 +66,7 @@ function MyModel(props){
 
     return(
         <>
-        <Modal>
+        <Modal show={modelOpen} onHide={btnClose}>
             <Modal.Dialog>
                 <Modal.Header closeButton>
                     <Modal.Title>
@@ -92,7 +92,7 @@ function MyModel(props){
                     </div>
                 </Modal.body>
                 <Modal.Footer>
-                    <Button varient='secondary' onClick={funClose}>Close</Button>
+                    <Button varient='secondary' onClick={btnClose}>Close</Button>
                     <Button varient="primary" onClick={funUpdate}>Update</Button>
                     <Button varient="secondary" onClick={funDelete}>Delete</Button>
                 </Modal.Footer>
